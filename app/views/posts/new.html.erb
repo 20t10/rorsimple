@@ -1,0 +1,19 @@
+<h1 class="title">New Post</h1>
+
+<div class="section">
+  <%= form_with scope: :Post, local: true do |form| %>
+    <p>
+      <%= form.label :title %><br>
+      <%= form.text_field :title %>
+    </p>
+
+    <p>
+      <%= form.label :content %><br>
+      <%= form.text_area :content %>
+    </p>
+
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
+</div>
